@@ -4,6 +4,10 @@
     "tailwindcss": "^3.2.4"
   },
   "scripts": {
-    "tw-build": "npx tailwindcss-cli -i ./dist/css/tailwind/tailwindStarter.css -o ./dist/css/tailwind/tailwind.css"
+    "tw-build": "npx tailwindcss-cli -i ./dist/css/tailwind/tailwindStarter.css -o ./dist/css/tailwind/tailwind.css",
+    "sass": "sass --watch ./dist/scss/index.scss:./dist/css/style.css --style compressed"
+  },
+  "dependencies": {
+    "sass": "^1.56.1"
   }
 }

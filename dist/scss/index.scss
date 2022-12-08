@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+// Abstract
+@import './abstract/variables';
+@import './abstract/global';
+
+// Layout
+@import './layouts/header';
+@import './layouts/services';
+@import './layouts/photocollage';
+@import './layouts/footer';
+
+// Components
+@import './components/howworks';
+@import './components/learning-sec';

@@ -1,0 +1,53 @@
+/* ======= Header CSS || START ======= */
+.site-nav {
+  background-color: transparent;
+  transition: background-color .5s cubic-bezier(.165, .84, .44, 1), box-shadow .5s cubic-bezier(.165, .84, .44, 1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 2px;
+  z-index: 10;
+  perspective: 2000px;
+
+  .site-nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+    overflow: hidden;
+    color: $dark-text;
+
+    .site-nav__logo {
+      //background: url(./dist/images/logo.jpeg) 0/contain no-repeat;
+      //height: 2rem;
+      width: 8.5rem;
+      text-decoration: none;
+      --text-color: transparent;
+    }
+
+    .site-nav__item {
+      padding: 0 1rem;
+      color: $dark-text;
+      //color: #fff;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transition: color 0.5s ease;
+      &:hover{
+        color: $orange-text;
+      }
+    }
+
+    .site-nav__item--has-dropdown {
+      position: relative;
+      cursor: default;
+    }
+  }
+
+}
+
+
+/* ======= Header CSS || END ======= */
+

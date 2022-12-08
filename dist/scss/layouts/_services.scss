@@ -1,0 +1,31 @@
+.service-card{
+  .service-card-img {
+    border-radius: 1rem;
+    overflow: hidden;
+    width: calc(100% - 60px);
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -3rem;
+    z-index: 1;
+    position: relative;
+    transition: all 0.5s ease;
+    &:hover{
+      filter: brightness(110%);
+    }
+  }
+  .service-card-btn {
+    position: absolute;
+    top: calc(50% - 3rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s;
+  }
+  .service-card-content {
+    background-color: #ffffff;
+    padding: 4rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    transition: all .3s;
+  }
+
+}

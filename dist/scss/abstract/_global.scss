@@ -1,0 +1,125 @@
+/* ======= Global CSS || START ======= */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+
+  /*--error-100: #FFD4E1;*/
+  /*--error-500: #C51C4F;*/
+  /*--success-100: #CCFFF8;*/
+  /*--success-500: #007A64;*/
+  /*--warning-100: #FFEBCE;*/
+  /*--warning-500: #A56403;*/
+  /*--note-100: #FFF9D5;*/
+  /*--note-500: #F1D952;*/
+  /*--heading-color: var(--secondary-800);*/
+  /*--text-color: #39393a;*/
+  /*--primary-button-text-color: var(--secondary-000);*/
+  /*--primary-button-font-weight: 400;*/
+  /*--selected-bg: var(--primary-100);*/
+  /*--selected-border-color: var(--primary-500);*/
+  /*--selected-text-color: var(--primary-600);*/
+  /*--image-bg: var(--secondary-300);*/
+  /*--image-border-color: var(--secondary-300);*/
+  /*--border-color: var(--secondary-400);*/
+;
+  --dropdown-box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.12);
+  --tooltip-drop-shadow-alpha: 0.2;
+  --overlay-color-1: rgba(236, 236, 245, .9);
+  /*Area*/
+  --width-large-phone: 361px;
+  --width-tablet: 768px;
+  --width-large: 960px;
+  --height-large: 671px;
+  --gradient-start-color: rgba(255, 209, 199, 0.25);
+  --gradient-stop-color: rgba(58, 54, 228, 0.4);
+  line-height: 1.15;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.3;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+textarea,
+select:focus {
+  outline: none !important;
+}
+
+.text-muted {
+  color: #6c757d!important;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+.shadow {
+  box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
+}
+
+/* ======= Global CSS || END ======= */
