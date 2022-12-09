@@ -1,0 +1,198 @@
+
+:root {
+  --transparent: transparent;
+  --black: #000;
+  --white: #fff;
+
+  --gunmetal-100: #d4d5d7;
+  --gunmetal-200: #9b9da1;
+  --gunmetal-400: #63656a;
+  --gunmetal-500: #2a2d34;
+  --gunmetal-800: #17191d;
+
+  --blue-400: #6caef1;
+  --blue-500: #3c91e6;
+}
+
+
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+    --s: 4em; /* control the size */
+    background:
+            radial-gradient(#C02942 24%,#0000 25%),
+            radial-gradient(#53777A 30%,#0000 32%) calc(var(--s)/2) calc(var(--s)/2),
+            repeating-conic-gradient(from 30deg,#ECD078 0 30deg,#D95B43 0 90deg);
+    background-size: var(--s) var(--s);
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ph-dog {
+  font-size: 115px;
+  color: var(--blue-500);
+}
+
+.title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.good {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-top: 0.6rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 400px;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  background: $dark-text;
+  border-radius: 5px;
+  padding: 2rem 3rem;
+}
+
+.label-email,
+.label-password,
+.label-remember {
+  display: flex;
+}
+
+.label-email,
+.label-password {
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.label-remember {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.email-span,
+.password-span {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.input-email-container,
+.input-password-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  background-color: $dark-text;
+  border-radius: 0.25rem;
+  transition-property: color, background-color, border-color,
+  text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input-email-container:focus-within,
+.input-password-container:focus-within {
+  box-shadow: inset 0 0 0 calc(2px + 0px) #f2f2f2;
+}
+
+.input-email-container i,
+.input-password-container i {
+  font-size: 24px;
+}
+
+.input-email,
+.input-password {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: var(--gunmetal-200);
+  background-color: var(--transparent);
+  outline: none;
+  flex: 1;
+}
+
+.input-email::placeholder,
+.input-password::placeholder {
+  color: var(--gunmetal-400);
+}
+
+.input-verify {
+  display: none;
+}
+
+.btn-checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 2px;
+  background-color: var(--gunmetal-500);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn-checkbox .ph-check {
+  display: block;
+  color: var(--blue-500);
+  font-size: 20px;
+}
+
+.btn-sign-in {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem 1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  background: $orange-text;
+  transition-property: color, background-color, border-color,
+  text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+
+.btn-sign-in:hover {
+  background-color: var(--blue-400);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.footer-link {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-decoration: underline;
+  transition-property: color, background-color, border-color,
+  text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.footer-link:hover {
+  color: $dark-text;
+}
+
+//
