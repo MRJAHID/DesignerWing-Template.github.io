@@ -34,29 +34,35 @@
 </head>
 <body class="antialiased ">
 <!-- ======= Header || START ======= -->
-<header style="background: #f5f5f5;" id="site_nav" class="site-nav shadow-lg">
+<header style="background: #fff;" id="site_nav" class="site-nav shadow-lg">
     <div class="site-nav__inner container px-2 mx-auto">
         <a href="index.html" class="site-nav__logo" aria-label="DesignerWing Homepage">
-            <img src="./dist/images/logo.jpeg" alt="logo"/>
+            <img src="./dist/images/logo.png" alt="logo"/>
         </a>
 
-        <div class="flex">
-            <a href="create.html" class="site-nav__item">Service</a>
-            <a href="create.html" class="site-nav__item">Gallery</a>
-            <a href="create.html" class="site-nav__item">Prices</a>
-            <a href="create.html" class="site-nav__item">Free Trial</a>
+        <div class="hidden md:flex">
+            <a href="services.html" class="site-nav__item">Service</a>
+            <a href="contactus.html" class="site-nav__item">Contact</a>
+            <a href="pricing.html" class="site-nav__item">Prices</a>
+            <a href="service.html" class="site-nav__item">Free Trial</a>
         </div>
 
 
-        <div class="flex">
-            <a href="signin.html" class="site-nav__item flex items-center">Sign&nbsp;In
+        <div class="hidden md:flex">
+            <a href="login.html" class="site-nav__item flex items-center">Sign&nbsp;In
             </a>
-            <a href="#" class="site-nav__item">
+            <a href="login.html" class="site-nav__item">
                 <button
                         type="button"
                         class="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-sm leading-tight rounded shadow-md hover:bg-yellow-600 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                 >Sign Up
                 </button>
+            </a>
+        </div>
+
+        <div class="block md:hidden  px-4">
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
             </a>
         </div>
     </div>
@@ -67,18 +73,19 @@
 <main>
     <!-- ======= Services || START ======= -->
     <section  class="rounded-lg bg-white py-16 services">
-        <div class="services_container pt-32 container px-2 mx-auto">
+        <div class="services_container container pt-12 md:pt-32 px-2 mx-auto">
             <section class="py-4">
                 <div class="container">
                     <div class="section-title text-center mb-5">
-                        <h2 style="font-size: 2.5rem; font-weight: 500;"><span class="text-white">Our Professional Photo Editing Services</span>
+                        <h2 class="font-medium  text-2xl md:text-4xl">
+                            <span class="text-white">Our Professional Photo Editing Services</span>
                         </h2>
-                        <p class="text-center tracking-wide text-white font-medium text-lg ">Our Features Services</p>
+                        <p class="text-center mt-3 tracking-wide text-white font-medium text-lg ">Our Features Services</p>
                     </div>
                     <div class="flex  flex-wrap mb-4">
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
+                                <a href="service.html" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
                                          src="https://www.imageeditexpert.com/uploads/images/service/Background-remove-service.jpg"/>
                                 </a>
@@ -93,9 +100,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
+                                <a href="service.html" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
                                          src="https://www.imageeditexpert.com/uploads/images/service/Clipping-path-services.jpg"/>
                                 </a>
@@ -110,9 +117,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
+                                <a href="service.html" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
                                          src="https://www.imageeditexpert.com/uploads/images/service/Image-masking-service.jpg"/>
                                 </a>
@@ -126,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -143,9 +150,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
+                                <a href="service.html" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
                                          src="https://www.imageeditexpert.com/uploads/images/service/shadow-masking-service.jpg"/>
                                 </a>
@@ -160,9 +167,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
+                                <a href="service.html" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
                                          src="https://www.imageeditexpert.com/uploads/images/service/Photo-restoration-service.jpg"/>
                                 </a>
@@ -177,7 +184,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -194,9 +201,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
+                                <a href="service.html" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
                                          src="https://www.imageeditexpert.com/uploads/images/service/Color-correction-services.jpg"/>
                                 </a>
@@ -211,9 +218,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
+                                <a href="service.html" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
                                          src="https://www.imageeditexpert.com/uploads/images/service/Jewelry-retouch-service.jpg"/>
                                 </a>
@@ -224,56 +231,6 @@
                                     <p class="text-center font-normal py-2 text-sm text-muted">Jewelry retouching
                                         services offers an opportunity for pieces of jewelry made of gold, precious
                                         stone, silver,...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
-                            <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
-                                    <img class="service-card-img bg-cover"
-                                         src="https://www.imageeditexpert.com/uploads/images/service/Clipping-path-services.jpg"/>
-                                </a>
-                                <div class="service-card-content">
-                                    <a href="#" class="block font-medium text-center mb-3">
-                                        <h3 style="font-size: 15px; font-weight: 600; color: #222;">BEST CLIPPING PATH
-                                            SERVICE</h3>
-                                    </a>
-                                    <p class="text-center font-normal py-2 text-sm text-muted">The best image clipping
-                                        path service can help you to remove distracting backgrounds from an image to
-                                        make the...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
-                            <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
-                                    <img class="service-card-img bg-cover"
-                                         src="https://www.imageeditexpert.com/uploads/images/service/Image-masking-service.jpg"/>
-                                </a>
-                                <div class="service-card-content">
-                                    <a href="#" class="block font-medium text-center mb-3">
-                                        <h3 style="font-size: 15px; font-weight: 600; color: #222;">IMAGE MASKING</h3>
-                                    </a>
-                                    <p class="text-center font-normal py-2 text-sm text-muted">Furry clothes, human
-                                        hair, doll, and generally, a subject in an image whose edges are soft is in dire
-                                        need of...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
-                            <div class="service-card">
-                                <a href="#" style="bottom: -3rem">
-                                    <img class="service-card-img bg-cover"
-                                         src="https://www.imageeditexpert.com/uploads/images/service/Retouching-services.jpg"/>
-                                </a>
-                                <div class="service-card-content">
-                                    <a href="#" class="block font-medium text-center mb-3">
-                                        <h3 style="font-size: 15px; font-weight: 600; color: #222;">RETOUCHING
-                                            SERVICES</h3>
-                                    </a>
-                                    <p class="text-center font-normal py-2 text-sm text-muted">A professional photo
-                                        retouching service comes with the promise of saving your time, effort, and
-                                        money. There's...</p>
                                 </div>
                             </div>
                         </div>

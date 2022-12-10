@@ -40,18 +40,18 @@
             <img src="./dist/images/logo.png" alt="logo"/>
         </a>
 
-        <div class="flex">
-            <a href="create.html" class="site-nav__item">Service</a>
-            <a href="create.html" class="site-nav__item">Gallery</a>
-            <a href="create.html" class="site-nav__item">Prices</a>
-            <a href="create.html" class="site-nav__item">Free Trial</a>
+        <div class="hidden md:flex">
+            <a href="services.html" class="site-nav__item">Service</a>
+            <a href="contactus.html" class="site-nav__item">Contact</a>
+            <a href="pricing.html" class="site-nav__item">Prices</a>
+            <a href="service.html" class="site-nav__item">Free Trial</a>
         </div>
 
 
-        <div class="flex">
-            <a href="signin.html" class="site-nav__item flex items-center">Sign&nbsp;In
+        <div class="hidden md:flex">
+            <a href="login.html" class="site-nav__item flex items-center">Sign&nbsp;In
             </a>
-            <a href="#" class="site-nav__item">
+            <a href="login.html" class="site-nav__item">
                 <button
                         type="button"
                         class="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-sm leading-tight rounded shadow-md hover:bg-yellow-600 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
@@ -59,15 +59,20 @@
                 </button>
             </a>
         </div>
+
+        <div class="block md:hidden  px-4">
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
     </div>
 </header>
-
 <!-- ======= Header || START ======= -->
 
 <!-- ======= Main Section || START ======= -->
 <main>
     <!-- ======= Services || START ======= -->
-    <div class="contactus">
+    <div class="contactus flex flex-col md:flex-row">
         <h2 class="contact-title">
             Do you have a project?</br>
             I would love to help.
