@@ -40,23 +40,29 @@
             <img src="./dist/images/logo.png" alt="logo"/>
         </a>
 
-        <div class="flex">
-            <a href="create.html" class="site-nav__item">Service</a>
-            <a href="create.html" class="site-nav__item">Gallery</a>
-            <a href="create.html" class="site-nav__item">Prices</a>
-            <a href="create.html" class="site-nav__item">Free Trial</a>
+        <div class="hidden md:flex">
+            <a href="services.html" class="site-nav__item">Service</a>
+            <a href="contactus.html" class="site-nav__item">Contact</a>
+            <a href="pricing.html" class="site-nav__item">Prices</a>
+            <a href="service.html" class="site-nav__item">Free Trial</a>
         </div>
 
 
-        <div class="flex">
-            <a href="signin.html" class="site-nav__item flex items-center">Sign&nbsp;In
+        <div class="hidden md:flex">
+            <a href="login.html" class="site-nav__item flex items-center">Sign&nbsp;In
             </a>
-            <a href="#" class="site-nav__item">
+            <a href="login.html" class="site-nav__item">
                 <button
                         type="button"
                         class="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-sm leading-tight rounded shadow-md hover:bg-yellow-600 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                 >Sign Up
                 </button>
+            </a>
+        </div>
+
+        <div class="block md:hidden  px-4">
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
             </a>
         </div>
     </div>
@@ -66,11 +72,11 @@
 <!-- ======= Main Section || START ======= -->
 <main>
     <!-- ======= Hero || START ======= -->
-    <section style="background: linear-gradient(#181818, #1E428E);" class="hero  px-3 pb-12 pt-48">
+    <section style="background: linear-gradient(#181818, #1E428E);" class="hero  px-3 pb-12 pt-28 md:pt-48">
         <div class="flex flex-col container  px-2 mx-auto justify-between items-center r gap-5">
             <div class="w-full flex flex-col justify-center items-center">
-                <p class="text-5xl font-medium text-center  text-white">The Free Online Photo Editor In Your Browser</p>
-                <p class="mt-2 font-normal text-white text-lg md:text-lg">Effortlessly edit photos and apply photo
+                <p class="text-3xl md:text-5xl font-medium text-center  text-white">The Free Online Photo Editor In Your Browser</p>
+                <p class="mt-2 font-normal text-white text-base text-center md:text-lg">Effortlessly edit photos and apply photo
                     effects with BeFunky!</p>
                 <div class="flex">
                     <a href="#" style="background: linear-gradient(90deg,#417efd,#81d54f);"
@@ -81,7 +87,7 @@
                 </div>
             </div>
             <div class="w-full mt-6">
-                <img class="h-full mx-auto w-full object-cover lg:w-[500px] lg:h-[500px]"
+                <img class="h-full mx-auto w-full object-cover"
                      src="https://imgv3.fotor.com/images/videoImage/Basic-photo-editing-with-Fotor-online-photo-editor.png"
                      alt="">
             </div>
@@ -90,17 +96,18 @@
     <!-- ======= Hero || END ======= -->
 
     <!-- ======= Services Section || START ======= -->
-    <section style="background: linear-gradient(#1E428E, #181818);" class="bg-white py-16 services">
+    <section style="background: linear-gradient(#1E428E, #181818);" class="bg-white py-8 md:py-16 services">
         <div class="services_container container px-2 mx-auto">
             <section class="py-4">
                 <div class="container">
                     <div class="section-title text-center mb-5">
-                        <h2 style="font-size: 2.5rem; font-weight: 500;"><span class="text-white">Our Professional Photo Editing Services</span>
+                        <h2 class="font-medium  text-2xl md:text-4xl">
+                            <span class="text-white">Our Professional Photo Editing Services</span>
                         </h2>
-                        <p class="text-center tracking-wide text-white font-medium text-lg ">Our Features Services</p>
+                        <p class="text-center mt-3 tracking-wide text-white font-medium text-lg ">Our Features Services</p>
                     </div>
                     <div class="flex  flex-wrap mb-4">
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -117,7 +124,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -134,7 +141,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -150,7 +157,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -167,7 +174,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -184,7 +191,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -201,7 +208,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -218,7 +225,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -235,7 +242,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3 mb-4  service_item px-4">
+                        <div class="w-full md:w-1/3 mb-4  service_item px-4">
                             <div class="service-card">
                                 <a href="#" style="bottom: -3rem">
                                     <img class="service-card-img bg-cover"
@@ -270,14 +277,14 @@
     <!-- ======= Services Section || END ======= -->
 
     <!-- ======= Photo Collage Section || START ======= -->
-    <section class="bg-white py-12 photoclg">
+    <section class="bg-white py-8 md:py-12 photoclg">
         <div class="photoclg_container pt-8 container px-2 mx-auto">
             <div>
                 <div class="section-title text-center mb-5">
                     <h2>
-                        <span class="font-medium text-3xl text-gray-800">Gallery of Professional Picture Editing Samples</span>
+                        <span class="font-medium text-xl md:text-3xl text-gray-800">Gallery of Professional Picture Editing Samples</span>
                     </h2>
-                    <p class="text-center tracking-wide text-gray-800 font-medium text-sm px-12 py-5 ">If you want to
+                    <p class="text-center tracking-wide text-gray-800 font-normal text-sm px-12 py-5 ">If you want to
                         evaluate the quality of our photo editing service, you should visit the Gallery section with
                         samples of previous works. All images are zoomable and come as before & after.</p>
                 </div>
@@ -332,7 +339,7 @@
 
 
     <!-- ======= How it Works Section || START ======= -->
-    <section class="bg-white py-12 howworks">
+    <section class="bg-white py-6 md:py-12 howworks">
         <div class="howworks_container pt-8 container px-2 mx-auto">
             <div>
                 <div class="section-title text-center mb-5">
@@ -342,8 +349,8 @@
                     <p class="text-center tracking-wide text-gray-800 font-medium text-lg px-12 py-5 ">Our Features Services</p>
                 </div>
                 <div class="howworks_content">
-                    <div class="flex">
-                        <div class="w-1/4 px-4">
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-1/4 py-4">
                             <div class="process-box">
                                 <div class="process-block-item w-1/2 mb-2">
                                         <i class="fa-solid fa-unlock-keyhole"></i>
@@ -352,7 +359,7 @@
                                 <p class="text-muted  text-center  font-normal text-sm mb-2">Log in or create an account on Image Edit Expert to begin processing your images for the best quality. You can get started within a few minutes. </p>
                             </div>
                         </div>
-                        <div class="w-1/4 px-4">
+                        <div class="w-full md:w-1/4 py-4">
                             <div class="process-box">
                                 <div class="process-block-item w-1/2 mb-2">
                                     <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -361,7 +368,7 @@
                                 <p class="text-muted  text-center  font-normal text-sm mb-2">Log in or create an account on Image Edit Expert to begin processing your images for the best quality. You can get started within a few minutes. </p>
                             </div>
                         </div>
-                        <div class="w-1/4 px-4">
+                        <div class="w-full md:w-1/4 py-4">
                             <div class="process-box">
                                 <div class="process-block-item w-1/2 mb-2">
                                     <i class="fa-solid fa-credit-card"></i>
@@ -370,7 +377,7 @@
                                 <p class="text-muted  text-center  font-normal text-sm mb-2">Pay for your images’ editing using payment methods, including Visa, Mastercard, American Express, and PayPal. These are payment gateways that are swift. </p>
                             </div>
                         </div>
-                        <div class="w-1/4 px-4">
+                        <div class="w-full md:w-1/4 py-4">
                             <div class="process-box">
                                 <div class="process-block-item w-1/2 mb-2">
                                     <i class="fa-solid fa-download"></i>
