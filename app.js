@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Cliping path image
-const clipImageContainer = document.querySelector('.clipimage_container');
-const clipImageSlider = document.querySelector('.clipimg_slider');
-clipImageSlider.addEventListener('input', (e) => {
-    clipImageContainer.style.setProperty('--position', `${e.target.value}%`);
-})
-
+// const clipImageContainer = document.querySelector('.clipimage_container');
+// const clipImageSlider = document.querySelector('.clipimg_slider');
+// clipImageSlider.addEventListener('input', (e) => {
+//     clipImageContainer.style.setProperty('--position', `${e.target.value}%`);
+// })
+// Call & init
