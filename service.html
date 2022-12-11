@@ -31,6 +31,7 @@
 
     <!-- Main Css -->
     <link rel="stylesheet" href="./dist/css/style.css"/>
+
 </head>
 <body class="antialiased ">
 <!-- ======= Header || START ======= -->
@@ -78,8 +79,10 @@
         <section style="background: linear-gradient(#181818, #1E428E);" class="hero  px-3 pb-12 pt-28 md:pt-48">
             <div class="flex flex-col container  px-2 mx-auto justify-between items-center r gap-5">
                 <div class="w-full flex flex-col justify-center items-center">
-                    <p class="text-3xl md:text-5xl font-medium text-center  text-white">Powerful AI Background Remover for Any Images</p>
-                    <p class="mt-2 font-normal text-white text-base text-center md:text-lg">Remove backgrounds 100% automatically with one click with DesignerWing!</p>
+                    <p class="text-3xl md:text-5xl font-medium text-center  text-white">Powerful AI Background Remover
+                        for Any Images</p>
+                    <p class="mt-2 font-normal text-white text-base text-center md:text-lg">Remove backgrounds 100%
+                        automatically with one click with DesignerWing!</p>
                     <div class="flex">
                         <a href="pricing.html" style="background: linear-gradient(90deg,#417efd,#81d54f);"
                            class="text-sm md:text-lg bg-gray-900 font-medium rounded text-white py-2 px-12 mt-10 hover:bg-zinc-800 mr-8">Order
@@ -108,12 +111,93 @@
                     <section class="IntroSection_intro__2WmVP shared_white__g2LLx IntroSection_introMorePadding__1Lp7s">
                         <div class="Container_container__3erG2 IntroSection_introContainer__24jz4 IntroSection_reverse__18UlM IntroSection_introMorePadding__1Lp7s">
                             <div class="IntroSection_intro__image__1GF7t IntroSection_introMore__image__2yYNw shared_anmatefadeinRight__uQVFU">
-                                <div class=""><span class="Image_imageWrapper__vikrc IntroSection_addImageBg__2-7-Y"
-                                                    style="padding-top: 71.2766%; background-color: unset;"><img
-                                        class="lzy Image_image__MPSDi loaded" alt="Image online editing tools"
-                                        width="1128" height="804"
-                                        src="https://imgv3.fotor.com/images/side/Image-online-editing-tools.jpg"
-                                        data-ll-status="loaded"></span></div>
+                                <!--      Clip Image       -->
+                                <div>
+                                    <div class="clipimage_container">
+                                        <div class="image-container">
+                                            <img
+                                                    class="image-before slider-image"
+                                                    src="./dist/images/picture/colorCorrection/colorCorrectionBefore.jpg"
+                                                    alt="color photo"
+                                            />
+                                            <img
+                                                    class="image-after slider-image"
+                                                    src="./dist/images/picture/colorCorrection/colorCorrectionAfter.jpg"
+                                                    alt="black and white"
+                                            />
+                                        </div>
+                                        <!-- step="10" -->
+                                        <input
+                                                type="range"
+                                                min="0"
+                                                max="100"
+                                                value="50"
+                                                aria-label="Percentage of before photo shown"
+                                                class="clipimg_slider"
+                                        />
+                                        <div class="slider-line" aria-hidden="true"></div>
+                                        <div class="slider-button" aria-hidden="true">
+                                            <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="30"
+                                                    height="30"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 256 256"
+                                            >
+                                                <rect width="256" height="256" fill="none"></rect>
+                                                <line
+                                                        x1="128"
+                                                        y1="40"
+                                                        x2="128"
+                                                        y2="216"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></line>
+                                                <line
+                                                        x1="96"
+                                                        y1="128"
+                                                        x2="16"
+                                                        y2="128"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></line>
+                                                <polyline
+                                                        points="48 160 16 128 48 96"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></polyline>
+                                                <line
+                                                        x1="160"
+                                                        y1="128"
+                                                        x2="240"
+                                                        y2="128"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></line>
+                                                <polyline
+                                                        points="208 96 240 128 208 160"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="IntroSection_intro__body___1fjL IntroSection_introMore__body__KmMxd shared_anmatefadeinLeft__386Tk">
                                 <h2 class="shared_font_black__2tw5W">Powerful online image editing tools</h2>
@@ -122,18 +206,100 @@
                                     fine-tune, clone, curve, wrinkle remover, and It's easy to make your picture amazing
                                     online. Photoshop online has never been easier. </p></div>
                                 <a href="pricing.html" target="_blank"
-                                   class="PageLink_pageLink__1twZl IntroSection_intro__pageLink__1exCC"> Order Now</a></div>
+                                   class="PageLink_pageLink__1twZl IntroSection_intro__pageLink__1exCC"> Order Now</a>
+                            </div>
                         </div>
                     </section>
                     <section class="IntroSection_intro__2WmVP shared_white__g2LLx IntroSection_introMorePadding__1Lp7s">
                         <div class="Container_container__3erG2 IntroSection_introContainer__24jz4 IntroSection_introMorePadding__1Lp7s">
                             <div class="IntroSection_intro__image__1GF7t IntroSection_introMore__image__2yYNw shared_anmatefadeinLeft__386Tk">
-                                <div class=""><span class="Image_imageWrapper__vikrc IntroSection_addImageBg__2-7-Y"
-                                                    style="padding-top: 66.6667%; background-color: unset;"><img
-                                        class="lzy Image_image__MPSDi loaded"
-                                        alt="Fotor photo editor for windows mac and app" width="1200" height="800"
-                                        src="https://imgv3.fotor.com/images/side/Fotor-photo-editor-for-windows-mac-and-app.jpg"
-                                        data-ll-status="loaded"></span></div>
+                                <!--  Clip Image-->
+                                <div>
+                                    <div class="clipimage_container">
+                                        <div class="image-container">
+                                            <img
+                                                    class="image-before slider-image"
+                                                    src="./dist/images/picture/highendRetouch/photoediting1before.jpg"
+                                                    alt="color photo"
+                                            />
+                                            <img
+                                                    class="image-after slider-image"
+                                                    src="./dist/images/picture//highendRetouch/photoediting1after.jpg"
+                                                    alt="black and white"
+                                            />
+                                        </div>
+                                        <!-- step="10" -->
+                                        <input
+                                                type="range"
+                                                min="0"
+                                                max="100"
+                                                value="50"
+                                                aria-label="Percentage of before photo shown"
+                                                class="clipimg_slider"
+                                        />
+                                        <div class="slider-line" aria-hidden="true"></div>
+                                        <div class="slider-button" aria-hidden="true">
+                                            <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="30"
+                                                    height="30"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 256 256"
+                                            >
+                                                <rect width="256" height="256" fill="none"></rect>
+                                                <line
+                                                        x1="128"
+                                                        y1="40"
+                                                        x2="128"
+                                                        y2="216"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></line>
+                                                <line
+                                                        x1="96"
+                                                        y1="128"
+                                                        x2="16"
+                                                        y2="128"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></line>
+                                                <polyline
+                                                        points="48 160 16 128 48 96"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></polyline>
+                                                <line
+                                                        x1="160"
+                                                        y1="128"
+                                                        x2="240"
+                                                        y2="128"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></line>
+                                                <polyline
+                                                        points="208 96 240 128 208 160"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="IntroSection_intro__body___1fjL IntroSection_introMore__body__KmMxd shared_anmatefadeinRight__uQVFU">
                                 <h2 class="h2 shared_font_black__2tw5W">Free photo editor for PC &amp; mobile</h2>
@@ -146,18 +312,100 @@
                                     which makes it easy for you to edit images anywhere and anytime with one Fotor
                                     account.</p></div>
                                 <a href="pricing.html" target="_blank"
-                                   class="PageLink_pageLink__1twZl IntroSection_intro__pageLink__1exCC">Order Now</a></div>
+                                   class="PageLink_pageLink__1twZl IntroSection_intro__pageLink__1exCC">Order Now</a>
+                            </div>
                         </div>
                     </section>
                     <section class="IntroSection_intro__2WmVP shared_white__g2LLx IntroSection_introMorePadding__1Lp7s">
                         <div class="Container_container__3erG2 IntroSection_introContainer__24jz4 IntroSection_reverse__18UlM IntroSection_introMorePadding__1Lp7s">
                             <div class="IntroSection_intro__image__1GF7t IntroSection_introMore__image__2yYNw shared_anmatefadeinRight__uQVFU">
-                                <div class=""><span class="Image_imageWrapper__vikrc IntroSection_addImageBg__2-7-Y"
-                                                    style="padding-top: 71.2766%; background-color: unset;"><img
-                                        class="lzy Image_image__MPSDi loaded" alt="Image online editing tools"
-                                        width="1128" height="804"
-                                        src="https://imgv3.fotor.com/images/side/Image-online-editing-tools.jpg"
-                                        data-ll-status="loaded"></span></div>
+                                <!--  Clip Image-->
+                                <div>
+                                    <div class="clipimage_container">
+                                        <div class="image-container">
+                                            <img
+                                                    class="image-before slider-image"
+                                                    src="./dist/images/picture/masking/channelmasking01before.jpg"
+                                                    alt="color photo"
+                                            />
+                                            <img
+                                                    class="image-after slider-image"
+                                                    src="./dist/images/picture/masking/channelmasking01after.jpg"
+                                                    alt="black and white"
+                                            />
+                                        </div>
+                                        <!-- step="10" -->
+                                        <input
+                                                type="range"
+                                                min="0"
+                                                max="100"
+                                                value="50"
+                                                aria-label="Percentage of before photo shown"
+                                                class="clipimg_slider"
+                                        />
+                                        <div class="slider-line" aria-hidden="true"></div>
+                                        <div class="slider-button" aria-hidden="true">
+                                            <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="30"
+                                                    height="30"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 256 256"
+                                            >
+                                                <rect width="256" height="256" fill="none"></rect>
+                                                <line
+                                                        x1="128"
+                                                        y1="40"
+                                                        x2="128"
+                                                        y2="216"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></line>
+                                                <line
+                                                        x1="96"
+                                                        y1="128"
+                                                        x2="16"
+                                                        y2="128"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></line>
+                                                <polyline
+                                                        points="48 160 16 128 48 96"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></polyline>
+                                                <line
+                                                        x1="160"
+                                                        y1="128"
+                                                        x2="240"
+                                                        y2="128"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></line>
+                                                <polyline
+                                                        points="208 96 240 128 208 160"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="16"
+                                                ></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>  >
                             </div>
                             <div class="IntroSection_intro__body___1fjL IntroSection_introMore__body__KmMxd shared_anmatefadeinLeft__386Tk">
                                 <h2 class="shared_font_black__2tw5W">Powerful online image editing tools</h2>
@@ -205,7 +453,8 @@
                             <h2>
                                 <span class="font-medium text-4xl text-gray-800">How It Work</span>
                             </h2>
-                            <p class="text-center tracking-wide text-gray-800 font-medium text-lg px-12 py-5 ">Our Features Services</p>
+                            <p class="text-center tracking-wide text-gray-800 font-medium text-lg px-12 py-5 ">Our
+                                Features Services</p>
                         </div>
                         <div class="howworks_content">
                             <div class="flex flex-wrap">
@@ -214,8 +463,11 @@
                                         <div class="process-block-item w-1/2 mb-2">
                                             <i class="fa-solid fa-unlock-keyhole"></i>
                                         </div>
-                                        <h5 class="text-center font-medium text-xl text-gray-800 mb-2">Login / Register</h5>
-                                        <p class="text-muted  text-center  font-normal text-sm mb-2">Log in or create an account on Image Edit Expert to begin processing your images for the best quality. You can get started within a few minutes. </p>
+                                        <h5 class="text-center font-medium text-xl text-gray-800 mb-2">Login /
+                                            Register</h5>
+                                        <p class="text-muted  text-center  font-normal text-sm mb-2">Log in or create an
+                                            account on Image Edit Expert to begin processing your images for the best
+                                            quality. You can get started within a few minutes. </p>
                                     </div>
                                 </div>
                                 <div class="w-full md:w-1/4 py-4">
@@ -223,8 +475,11 @@
                                         <div class="process-block-item w-1/2 mb-2">
                                             <i class="fa-solid fa-cloud-arrow-up"></i>
                                         </div>
-                                        <h5 class="text-center font-medium text-xl text-gray-800 mb-2">Order & Upload Image</h5>
-                                        <p class="text-muted  text-center  font-normal text-sm mb-2">Log in or create an account on Image Edit Expert to begin processing your images for the best quality. You can get started within a few minutes. </p>
+                                        <h5 class="text-center font-medium text-xl text-gray-800 mb-2">Order & Upload
+                                            Image</h5>
+                                        <p class="text-muted  text-center  font-normal text-sm mb-2">Log in or create an
+                                            account on Image Edit Expert to begin processing your images for the best
+                                            quality. You can get started within a few minutes. </p>
                                     </div>
                                 </div>
                                 <div class="w-full md:w-1/4 py-4">
@@ -233,7 +488,9 @@
                                             <i class="fa-solid fa-credit-card"></i>
                                         </div>
                                         <h5 class="text-center font-medium text-xl text-gray-800 mb-2">Payment</h5>
-                                        <p class="text-muted  text-center  font-normal text-sm mb-2">Pay for your images’ editing using payment methods, including Visa, Mastercard, American Express, and PayPal. These are payment gateways that are swift. </p>
+                                        <p class="text-muted  text-center  font-normal text-sm mb-2">Pay for your
+                                            images’ editing using payment methods, including Visa, Mastercard, American
+                                            Express, and PayPal. These are payment gateways that are swift. </p>
                                     </div>
                                 </div>
                                 <div class="w-full md:w-1/4 py-4">
@@ -243,7 +500,9 @@
                                         </div>
                                         <h5 class="text-center font-medium text-xl text-gray-800 mb-2">Download Images
                                         </h5>
-                                        <p class="text-muted  text-center  font-normal text-sm mb-2">Finally, download your images after our graphic designers have worked on their design. Every copy is of high quality and can be saved in different formats.</p>
+                                        <p class="text-muted  text-center  font-normal text-sm mb-2">Finally, download
+                                            your images after our graphic designers have worked on their design. Every
+                                            copy is of high quality and can be saved in different formats.</p>
                                     </div>
                                 </div>
                             </div>

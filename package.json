@@ -8,6 +8,7 @@
     "sass": "sass --watch ./dist/scss/index.scss:./dist/css/style.css --style compressed"
   },
   "dependencies": {
+    "image-compare-viewer": "^1.5.0",
     "sass": "^1.56.1"
   }
 }

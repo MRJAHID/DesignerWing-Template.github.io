@@ -1,4 +1,5 @@
 console.clear();
+import ImageCompare from "image-compare-viewer";
 
 document.addEventListener("DOMContentLoaded", function () {
     var before_after = document.querySelectorAll('.before_after');
@@ -14,8 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // add event listener for mouse over
             if (child.classList.contains('img')) {
-                child.addEventListener('mouseover', function (){toggleFocus(this, true)});
-                child.addEventListener('mouseout', function (){toggleFocus(this, false)});
+                child.addEventListener('mouseover', function () {
+                    toggleFocus(this, true)
+                });
+                child.addEventListener('mouseout', function () {
+                    toggleFocus(this, false)
+                });
             }
         }
     }
@@ -37,3 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+
+// Cliping path image
+const clipImageContainer = document.querySelector('.clipimage_container');
+const clipImageSlider = document.querySelector('.clipimg_slider');
+clipImageSlider.addEventListener('input', (e) => {
+    clipImageContainer.style.setProperty('--position', `${e.target.value}%`);
+})
+
