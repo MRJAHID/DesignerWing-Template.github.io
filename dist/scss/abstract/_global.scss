@@ -116,6 +116,18 @@ input:focus {
 html:focus-within {
   scroll-behavior: smooth;
 }
-
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
 
 /* ======= Global CSS || END ======= */

@@ -11,7 +11,8 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center 40%;
-    img{
+
+    img {
       height: 12rem;
       width: 100%;
       object-fit: cover;
@@ -31,4 +32,145 @@
       transition: 1s ease;
     }
   }
+}
+
+
+//
+.pricing-table {
+  box-shadow: 0px 0px 18px #ccc;
+  text-align: center;
+  padding: 30px 0px;
+  border-radius: 5px;
+  position: relative;
+
+  .btn {
+    color: #fff;
+    padding: 14px 40px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    -webkit-transition: all 0.3s linear;
+    border: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    position: relative;
+    text-decoration: none;
+    margin: 2px;
+    z-index: 9999;
+    text-decoration: none;
+    border-radius: 50px;
+
+    &:hover {
+      box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    }
+  }
+
+  .head {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 50px;
+    transition: all 0.5s ease;
+    .title {
+      margin-bottom: 20px;
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: 600;
+      color: $dark-text;
+    }
+    .pricing-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80px;
+        padding: 5px;
+      }
+
+    }
+  }
+
+  .price-title {
+    color: #fff;
+    position: relative;
+    top: -13px;
+    font-size: 11px;
+    font-weight: 800;
+    display: inline-block;
+  }
+
+  .price {
+    background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    line-height: 90px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: -50px;
+    transition: all 0.5s ease;
+
+    h1 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: inherit;
+    }
+  }
+
+  .price-view-btn {
+    margin: 20px 0;
+    background: rgba(245, 158, 11);
+    padding: 10px 0px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: normal;
+  }
+
+  .price-service-title {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $dark-text;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding-top: 10px;
+
+    li {
+      margin: 10px 0px;
+      font-size: 14px;
+      color: #555;
+    }
+  }
+
+  .sign-up {
+    background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
+    border-radius: 40px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+  }
+
+  .btn.bordered {
+    z-index: 50;
+    color: #333;
+
+    &:after {
+      background: #fff none repeat scroll 0 0;
+      border-radius: 50px;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: all 0.3 linear;
+      width: 100%;
+      z-index: -1;
+      transform: scale(1);
+    }
+  }
+
 }
