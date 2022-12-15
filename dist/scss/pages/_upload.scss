@@ -1,0 +1,155 @@
+:root {
+  --drag-area-text-color: #636c80;
+  --drag-area-separator-color: #93a9c3;
+  --drag-area-primary-color: #4c5ff9;
+  --drag-area-primary-hover: #162ef7;
+  --drag-area-loader-bg: #eff2f5;
+}
+
+// Drag & drop
+.drag-drop-wrapper {
+  transform-style: preserve-3d;
+  position: relative;
+  transition: transform 0.4s;
+
+  form {
+    display: none;
+  }
+
+  &.active {
+    transform: scale(1.2);
+
+    .drag-drop-area {
+      border-color: var(--drag-area-primary-color);
+
+      * {
+        pointer-events: none;
+      }
+    }
+  }
+
+  &.dropped-anim {
+    transform: rotateX(20deg);
+  }
+
+  &.dropped {
+    .drag-drop-progress {
+      top: calc(100% - 40px);
+    }
+  }
+
+  .drag-drop {
+    position: relative;
+    width: 100%;
+    max-width: 568px;
+    border-radius: 40px;
+    background: #fff;
+    box-shadow: 0px 53px 86px rgba(0, 76, 116, 0.1);
+    display: grid;
+    place-items: center;
+    padding: 42px;
+    z-index: 10;
+    margin: 0 auto;
+
+    &-area {
+      border-radius: 24px;
+      background: #f4f8fb;
+      border: 2px dashed #c5d1e2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+
+      &-text {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2rem;
+        text-align: center;
+        color: var(--drag-area-text-color);
+        @media screen and (max-width: 768px){
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
+
+      &-separator {
+        margin-top: 4px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--drag-area-separator-color);
+        position: relative;
+        @media screen and (max-width: 768px){
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        &::before {
+          content: "";
+          height: 2px;
+          width: 80px;
+          position: absolute;
+          top: 50%;
+          left: -90px;
+          background-color: var(--drag-area-separator-color);
+        }
+
+        &::after {
+          content: "";
+          height: 2px;
+          width: 80px;
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 10px);
+          background-color: var(--drag-area-separator-color);
+        }
+      }
+
+      &-button {
+        margin-top: 18px;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 16px 40px;
+        background-color: var(--drag-area-primary-color);
+        color: #fff;
+        border-radius: 12px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: var(--drag-area-primary-hover);
+        }
+      }
+    }
+  }
+
+  .drag-drop-progress {
+    position: relative;
+    width: 80%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-radius: 24px;
+    box-shadow: 0px 53px 86px rgba(0, 76, 116, 0.1);
+    padding: 70px 24px 30px 24px;
+    z-index: 9;
+    transition: top 0.6s;
+
+    &-loader {
+      width: 100%;
+      height: 22px;
+      background-color: var(--drag-area-loader-bg);
+      border-radius: 11px;
+      overflow: hidden;
+      padding: 3px;
+
+      &-thumb {
+        width: 0;
+        height: 100%;
+        background-color: var(--drag-area-primary-color);
+        border-radius: 11px;
+      }
+    }
+  }
+}

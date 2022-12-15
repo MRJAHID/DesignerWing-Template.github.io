@@ -35,12 +35,16 @@
       letter-spacing: 1px;
       transition: all 200ms linear;
 
-      &:hover{
+      &:hover:not(:last-of-type){
         color: #ffffff;
         background: #f59e0b;
         font-weight: 500;
         border-radius: 17px;
         padding: 5px 10px;
+      }
+      &:hover:last-child{
+        color: $orange-text;
+        font-weight: 400;
       }
     }
 
