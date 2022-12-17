@@ -72,7 +72,7 @@
 <!-- ======= Header || START ======= -->
 
 <!-- ======= Main Section || START ======= -->
-<main>
+<main class="bg-gray-200">
 
     <!-- ======= Hero || START ======= -->
     <section style="background: linear-gradient(#181818, #1E428E);" class="hero  px-3 pb-12 pt-28 md:pt-48">
@@ -96,42 +96,169 @@
     <!-- ======= Hero || END ======= -->
 
     <!-- ======= DragDrop || END ======= -->
-    <div class="drag-drop-wrapper px-2 md:px-4 py-28">
-        <form>
-            <input type="file" class="file-dialog" multiple />
-        </form>
-        <div class="drag-drop">
-            <div class="drag-drop-area">
-                <svg width="81.823" height="71.434" viewBox="0 0 81.823 71.434">
-                    <g id="Folder" transform="translate(-531.896 -391)">
-                        <g id="folder-blank" transform="translate(531.989 391)">
-                            <g>
-                                <path d="M81.638,49.858V95.78a7.656,7.656,0,0,1-7.654,7.654H7.654A7.656,7.656,0,0,1,0,95.78V39.654A7.656,7.656,0,0,1,7.654,32H33.166l10.2,10.2H73.985A7.656,7.656,0,0,1,81.638,49.858Z" transform="translate(0 -32)" fill="#3b49b5"/>
-                            </g>
-                        </g>
-                        <g id="Papers" transform="translate(-2 3)">
-                            <rect width="43" height="57" rx="2" transform="matrix(0.998, -0.07, 0.07, 0.998, 538.872, 398.786)" fill="#d5d5d5"/>
-                            <rect width="43" height="57" rx="2" transform="translate(554.329 396.131) rotate(3)" fill="#ebebeb"/>
-                            <rect width="43" height="57" rx="2" transform="matrix(0.995, -0.105, 0.105, 0.995, 562.946, 400.62)" fill="#fff"/>
-                        </g>
-                        <rect width="81.823" height="55.141" rx="8" transform="translate(531.896 407.151)" fill="#4c5ff9"/>
-                    </g>
-                </svg>
-                <div class="drag-drop-area-text">
-                    Drag your documents, photos, or videos here to start uploading.
-                </div>
-                <div class="drag-drop-area-separator">OR</div>
-<!--
-                <input multiple type="file" class="drag-drop-area-button file-dialog"/>
+<!--    <div class="drag-drop-wrapper px-2 md:px-4 py-28">-->
+<!--        <form>-->
+<!--            <input type="file" class="file-dialog" multiple />-->
+<!--        </form>-->
+<!--        <div class="drag-drop">-->
+<!--            <div class="drag-drop-area">-->
+<!--                <svg width="81.823" height="71.434" viewBox="0 0 81.823 71.434">-->
+<!--                    <g id="Folder" transform="translate(-531.896 -391)">-->
+<!--                        <g id="folder-blank" transform="translate(531.989 391)">-->
+<!--                            <g>-->
+<!--                                <path d="M81.638,49.858V95.78a7.656,7.656,0,0,1-7.654,7.654H7.654A7.656,7.656,0,0,1,0,95.78V39.654A7.656,7.656,0,0,1,7.654,32H33.166l10.2,10.2H73.985A7.656,7.656,0,0,1,81.638,49.858Z" transform="translate(0 -32)" fill="#3b49b5"/>-->
+<!--                            </g>-->
+<!--                        </g>-->
+<!--                        <g id="Papers" transform="translate(-2 3)">-->
+<!--                            <rect width="43" height="57" rx="2" transform="matrix(0.998, -0.07, 0.07, 0.998, 538.872, 398.786)" fill="#d5d5d5"/>-->
+<!--                            <rect width="43" height="57" rx="2" transform="translate(554.329 396.131) rotate(3)" fill="#ebebeb"/>-->
+<!--                            <rect width="43" height="57" rx="2" transform="matrix(0.995, -0.105, 0.105, 0.995, 562.946, 400.62)" fill="#fff"/>-->
+<!--                        </g>-->
+<!--                        <rect width="81.823" height="55.141" rx="8" transform="translate(531.896 407.151)" fill="#4c5ff9"/>-->
+<!--                    </g>-->
+<!--                </svg>-->
+<!--                <div class="drag-drop-area-text">-->
+<!--                    Drag your documents, photos, or videos here to start uploading.-->
+<!--                </div>-->
+<!--                <div class="drag-drop-area-separator">OR</div>-->
+<!--&lt;!&ndash;-->
+<!--                <input multiple type="file" class="drag-drop-area-button file-dialog"/>-->
 
-        -->
-                <button class="drag-drop-area-button">Browse files</button>
-            </div>
-        </div>
-        <div class="drag-drop-progress">
-            <div class="drag-drop-progress-loader">
-                <div class="drag-drop-progress-loader-thumb"></div>
-            </div>
+<!--        &ndash;&gt;-->
+<!--                <button class="drag-drop-area-button">Browse files</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="drag-drop-progress">-->
+<!--            <div class="drag-drop-progress-loader">-->
+<!--                <div class="drag-drop-progress-loader-thumb"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!-- component -->
+    <div class="flex items-center justify-center p-12">
+        <div class="mx-auto w-full max-w-[550px] rounded bg-white">
+            <form
+                    class="py-6 px-9"
+                    action="#"
+                    method="POST"
+            >
+                <div class="mb-5">
+                    <label
+                            for="email"
+                            class="mb-3 block text-base font-medium text-gray-700"
+                    >
+                        Send files to this email:
+                    </label>
+                    <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="example@domain.com"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    />
+                </div>
+
+                <div class="mb-6 pt-4">
+                    <label class="mb-5 block text-xl font-semibold text-gray-700">
+                        Upload File
+                    </label>
+
+                    <div class="mb-8">
+                        <input type="file" name="file" id="file" class="sr-only" />
+                        <label
+                                for="file"
+                                class="relative flex min-h-[200px] items-center justify-center rounded-md border border-dashed border-[#e0e0e0] p-12 text-center"
+                        >
+                            <div>
+              <span class="mb-2 block text-xl font-semibold text-gray-700">
+                Drop files here
+              </span>
+                                <span class="mb-2 block text-base font-medium text-[#6B7280]">
+                Or
+              </span>
+                                <span
+                                        class="inline-flex rounded border border-[#e0e0e0] py-2 px-7 text-base font-medium text-gray-700"
+                                >
+                Browse
+              </span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="mb-5 rounded-md bg-[#F5F7FB] py-4 px-8">
+                        <div class="flex items-center justify-between">
+            <span class="truncate pr-3 text-base font-medium text-gray-700">
+              banner-design.png
+            </span>
+                            <button class="text-gray-700">
+                                <svg
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M0.279337 0.279338C0.651787 -0.0931121 1.25565 -0.0931121 1.6281 0.279338L9.72066 8.3719C10.0931 8.74435 10.0931 9.34821 9.72066 9.72066C9.34821 10.0931 8.74435 10.0931 8.3719 9.72066L0.279337 1.6281C-0.0931125 1.25565 -0.0931125 0.651788 0.279337 0.279338Z"
+                                            fill="currentColor"
+                                    />
+                                    <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M0.279337 9.72066C-0.0931125 9.34821 -0.0931125 8.74435 0.279337 8.3719L8.3719 0.279338C8.74435 -0.0931127 9.34821 -0.0931123 9.72066 0.279338C10.0931 0.651787 10.0931 1.25565 9.72066 1.6281L1.6281 9.72066C1.25565 10.0931 0.651787 10.0931 0.279337 9.72066Z"
+                                            fill="currentColor"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="rounded-md bg-[#F5F7FB] py-4 px-8">
+                        <div class="flex items-center justify-between">
+            <span class="truncate pr-3 text-base font-medium text-gray-700">
+              banner-design.png
+            </span>
+                            <button class="text-gray-700">
+                                <svg
+                                        width="10"
+                                        height="10"
+                                        viewBox="0 0 10 10"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M0.279337 0.279338C0.651787 -0.0931121 1.25565 -0.0931121 1.6281 0.279338L9.72066 8.3719C10.0931 8.74435 10.0931 9.34821 9.72066 9.72066C9.34821 10.0931 8.74435 10.0931 8.3719 9.72066L0.279337 1.6281C-0.0931125 1.25565 -0.0931125 0.651788 0.279337 0.279338Z"
+                                            fill="currentColor"
+                                    />
+                                    <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M0.279337 9.72066C-0.0931125 9.34821 -0.0931125 8.74435 0.279337 8.3719L8.3719 0.279338C8.74435 -0.0931127 9.34821 -0.0931123 9.72066 0.279338C10.0931 0.651787 10.0931 1.25565 9.72066 1.6281L1.6281 9.72066C1.25565 10.0931 0.651787 10.0931 0.279337 9.72066Z"
+                                            fill="currentColor"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="relative mt-5 h-1.5 w-full rounded-lg bg-[#E2E5EF]">
+                            <div
+                                    class="absolute left-0 right-0 h-full w-3/4 rounded-lg bg-[#6A64F1]"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button
+                            class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-medium text-white outline-none"
+                    >
+                        Send File
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
     <!-- ======= DragDrop || END ======= -->
