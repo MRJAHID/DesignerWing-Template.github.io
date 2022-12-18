@@ -14,6 +14,7 @@
             href="./dist/images/Favicon.jpeg"
             sizes="any"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Poppins Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -119,11 +120,21 @@
                             <div class="price">
                                 <h1>$0.30</h1>
                             </div>
-                            <div class="price-view-btn">
-                                <button style="z-index: 0; background: #fff; color: #000;" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" onclick="getBasciPictures(30)">View
+                            <div  id="lightgallery" class="price-view-btn">
+                                <a href="https://images.unsplash.com/photo-1664737061963-862d6a174a3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" data-caption="Image caption">
+                                    <img src="https://images.unsplash.com/photo-1664737061963-862d6a174a3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="First image">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1671347202398-b09163f873bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+                                    <img src="https://images.unsplash.com/photo-1671347202398-b09163f873bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Second image">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1644840379571-2a973eee0726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=800">
+                                    <img src="https://images.unsplash.com/photo-1644840379571-2a973eee0726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=800" alt="Third image">
+                                </a>
+                                <button style="z-index: 0; background: #fff; color: #000;"  type="button" class="btn btn-primary btn-sm">View
                                     Examples
                                 </button>
                             </div>
+
                             <div class="price-service-title">Services applied:</div>
                             <ul>
                                 <li>Basic Clipping Path</li>
@@ -163,7 +174,7 @@
                                 <h1>$1.49</h1>
                             </div>
                             <div class="price-view-btn">
-                                <button style="z-index: 0; background: #fff; color: #000;" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" onclick="getHighiPictures(30)">View
+                                <button style="z-index: 0; background: #fff; color: #000;" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">View
                                     Examples
                                 </button>
                             </div>
@@ -477,6 +488,15 @@
 <!-- ======= Footer Section  || END ======= -->
 
 <!-- ======= SCRIPTS || START ======= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js" integrity="sha512-pG+XpUdyBtp28FzjpaIaj72KYvZ87ZbmB3iytDK5+WFVyun8r5LJ2x1/Jy/KHdtzUXA0CUVhEnG+Isy1jVJAbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-cs5vRstvdBhVt5xFxjYtmbb3BF0fgVYwbBNsfAxFLGuRiRm/4PoKJvAt55KJtT8AvWOxDL4Xt/AVSE48geDjHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/plugins/fullscreen/lg-fullscreen.min.js" integrity="sha512-CReiWBH7nLeHwYN1Se3/sGb3Kr2Y7JIJFx9JVVgfpt2w5Zj4ECKT37OePKfdrX4XWkHwe2UK9eolal6iUBxADw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        mode: 'lg-fade',
+        cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
+    });
+</script>
 <script src="app.js"></script>
 <!-- ======= SCRIPTS || END ======= -->
 </body>
