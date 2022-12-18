@@ -35,14 +35,15 @@
       letter-spacing: 1px;
       transition: all 200ms linear;
 
-      &:hover:not(:last-of-type){
+      &:hover:not(:last-of-type) {
         color: #ffffff;
         background: #f59e0b;
         font-weight: 500;
         border-radius: 17px;
         padding: 5px 10px;
       }
-      &:hover:last-child{
+
+      &:hover:last-child {
         color: $orange-text;
         font-weight: 400;
       }
@@ -59,3 +60,67 @@
 
 /* ======= Header CSS || END ======= */
 
+.megamenu {
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120%;
+  background-color: #fff;
+  z-index: 200;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+
+.megamenu-item:hover .megamenu {
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.single-mega {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  a {
+    height: auto;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    &:hover{
+      color: $orange-text;
+    }
+  }
+}
+.mega-img-wrap {
+  border: 1px solid #ede5e5;
+  box-shadow: 0 0 5px rgb(202 196 196 / 40%);
+}
+.mega-img-wrap img {
+  position: relative;
+  //height: auto;
+  height: 8rem;
+  /* background-size: cover; */
+  width: auto;
+  object-fit: cover;
+}
+.mega-img-caption {
+  padding: 8px 5px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #555;
+  word-break: break-word;
+}
+.single-mega:hover .mega-img-caption {
+  background: linear-gradient(to right, #e7e240, #ebb51d);
+  color: #363232;
+  font-weight: 600;
+}
