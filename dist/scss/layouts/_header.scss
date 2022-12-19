@@ -95,15 +95,18 @@
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
-    &:hover{
+
+    &:hover {
       color: $orange-text;
     }
   }
 }
+
 .mega-img-wrap {
   border: 1px solid #ede5e5;
   box-shadow: 0 0 5px rgb(202 196 196 / 40%);
 }
+
 .mega-img-wrap img {
   position: relative;
   //height: auto;
@@ -112,6 +115,7 @@
   width: auto;
   object-fit: cover;
 }
+
 .mega-img-caption {
   padding: 8px 5px;
   font-size: 11px;
@@ -119,8 +123,196 @@
   color: #555;
   word-break: break-word;
 }
+
 .single-mega:hover .mega-img-caption {
   background: linear-gradient(to right, #e7e240, #ebb51d);
   color: #363232;
   font-weight: 600;
+}
+
+
+// Mobile Menu
+
+//$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+//transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+@import 'https://fonts.googleapis.com/css?family=Fira+Sans:300,400';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+$black: #252525;
+$white: #fff;
+$grey: #eaeaea;
+
+$primary-color-dark: darken( $primary-color, 10% );
+$primary-color-tint-1: lighten( $primary-color, 10% );
+$primary-color-tint-2: lighten( $primary-color, 20% );
+$primary-color-tint-3: lighten( $primary-color, 30% );
+$primary-color-tint-4: lighten( $primary-color, 40% );
+$primary-color-tint-5: lighten( $primary-color, 50% );
+$primary-font: "Fira Sans", Arial, sans-serif;
+
+
+.nav-top {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 101;
+  padding: 10px 20px;
+  width: 100%;
+  height: 50px;
+  background-color: $primary-color-dark;
+
+  .hamburger {
+    margin-left: auto;
+    color: $white;
+    cursor: pointer;
+  }
+}
+.nav-drill {
+  margin-top: 50px;
+  transform: translateX(100%);
+}
+.nav-is-toggled {
+  .nav-drill {
+    transform: translateX(0);
+  }
+  &::after {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// ---------------------------------------
+// important stuff starts here
+
+$nav-width: 250px;
+$nav-padding: 0.875em 1em;
+$nav-border-color: $primary-color-tint-5;
+$nav-background-color: $white;
+$nav-icon-font: 'Material Icons';
+$nav-icon-arrow-right: 'chevron_right';
+$nav-icon-arrow-left: 'chevron_left';
+
+$nav-level-border-color: $primary-color;
+$nav-level-background-color: $primary-color-tint-5;
+
+$nav-level3-background-color: $primary-color-tint-4;
+$nav-level4-background-color: $primary-color-tint-3;
+$nav-level5-background-color: $primary-color-tint-2;
+
+.nav {
+  &-drill {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: $nav-width;
+    height: 100vh;
+    background-color: $nav-background-color;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    transition: 0.45s;
+  }
+
+  &-items {
+    flex: 0 0 100%;
+  }
+
+  &-item {
+    &:not(:last-child) {
+      border-bottom: solid 1px #e1e2e3;
+    }
+  }
+
+  &-link {
+    display: block;
+    padding: $nav-padding;
+    background-color: $nav-background-color;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: #3e3e3e;
+    font-weight: 400;
+  }
+
+  &-expand {
+    &-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateX(100%);
+      background-color: $nav-level-background-color;
+      transition: 0.3s;
+      visibility: hidden;
+
+      .nav-item {
+        &:not(:last-child) {
+          border-bottom: solid 1px $nav-level-border-color;
+        }
+      }
+
+      .nav-link {
+        background-color: $nav-level-background-color;
+      }
+
+      .nav-back-link {
+        display: flex;
+        align-items: center;
+        background-color: $primary-color !important;
+        color: $white;
+
+        &::before {
+          content: $nav-icon-arrow-left;
+          margin-right: 0.5em;
+          font-family: $nav-icon-font;
+        }
+      }
+    }
+
+    &-link {
+      display: flex;
+      justify-content: space-between;
+
+      &::after {
+        content: $nav-icon-arrow-right;
+        flex: 0 1 auto;
+        font-family: $nav-icon-font;
+      }
+    }
+
+    &.active {
+      > .nav-expand-content {
+        transform: translateX(0);
+        visibility: visible;
+      }
+    }
+
+    // quick example for other level colours
+    .nav-expand-content {
+      background-color: $nav-level-background-color;
+      .nav-link {
+        background-color: $nav-level-background-color;
+      }
+      .nav-expand-content {
+        background-color: $nav-level3-background-color;
+        .nav-link {
+          background-color: $nav-level3-background-color;
+        }
+        .nav-expand-content {
+          background-color: $nav-level4-background-color;
+          .nav-link {
+            background-color: $nav-level4-background-color;
+          }
+          .nav-expand-content {
+            background-color: $nav-level5-background-color;
+            .nav-link {
+              background-color: $nav-level5-background-color;
+            }
+          }
+        }
+      }
+    }
+  }
 }
